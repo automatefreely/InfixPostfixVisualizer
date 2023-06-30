@@ -1,6 +1,8 @@
 # InfixPostfixVisualizer
 You can view the visualizer here -> https://automatefreely.github.io/InfixPostfixVisualizer/ 
 
+![Image of the visualizer](https://github.com/automatefreely/InfixPostfixVisualizer/blob/main/preview.png)
+
 This project has two part
 1. Auto Visualizer : This will automatically Convert the Infix To POstfix visually from where the user left (If the user left in an incorrect state then it will move base to the previous correct step and proceed).
 2. Manual User Intraction : This will allow user to intract with the visualizer.
