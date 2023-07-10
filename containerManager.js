@@ -1,5 +1,8 @@
 class ContainerManager {
-  constructor(expression, symbolProps) {
+  constructor(expression, symbolProps){
+    this.init(expression, symbolProps);
+  }
+  init(expression, symbolProps) {
     this.symbolProps = symbolProps;
 
     this.arrayInfixContainer = new ArrayContainer(
@@ -41,6 +44,8 @@ class ContainerManager {
     this.dustbin = new Dustbin(250, 400, 60, 60);
     this.dustbin.loadImage("empty_recycle_bin.png");
   }
+
+
 
   draw(ctx) {
     const image = new Image();

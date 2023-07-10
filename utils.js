@@ -18,6 +18,38 @@ class Stack {
   }
 }
 
+const drawRect=(autoPlayBtn,text, ctx)=>{
+  const x = autoPlayBtn.x;
+  const y = autoPlayBtn.y;
+  const width = autoPlayBtn.width;
+  const height = autoPlayBtn.height;
+  // console.log(x, y, width, height);
+  ctx.beginPath();
+  ctx.font = "20px Georgia";
+
+  ctx.fillRect(
+    x,
+    y,
+    width,
+    height
+  );
+
+  ctx.textAlign = "center";
+  ctx.textBaseline = "middle";
+  ctx.fillStyle = "yellow";
+  ctx.fillText(text, x+width/2, y+height/2);
+  ctx.fillStyle = "black";
+  ctx.stroke();
+}
+
+const getRextCenter=(rect)=>{
+  const x = autoPlayBtn.x;
+  const y = autoPlayBtn.y;
+  const width = autoPlayBtn.width;
+  const height = autoPlayBtn.height;
+  return {x:x+width/2, y:y+height/2};
+}
+
 // glue p1 with p2
 const glue = (p1, p2) => {
   p1.x = p2.x;

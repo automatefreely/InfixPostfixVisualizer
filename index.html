@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
         <title>Postfix Infix Visulizer</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!-- <div id = "h1">
+        <center><h1 >Infix Postfix Visualizer</h1></center>
+        </div> -->
+        <div id="box">
+            <div id="canvas">
+                <canvas id="myCanvas"></canvas>
+            </div>
+            <div id="form">
+                <form>
+                    <div class="in">
+                    <label for="infix" >Infix:</label>
+                    <input type="text" id="infix" name="infix"></div>
+                    <br><div class="in">
+                    <label for="postfix">Postfix:</label>
+                    <input type="text" id="postfix" name="postfix"></div><br>
+                </form>
+                <div class="bin"><button id="update">Update</button> <button id="autoplay">Autoplay</button></div>
+
+            </div>
+        </div>
         
-        <canvas id="myCanvas"></canvas>
+        <div id="h1"><h1>Infix to Postfix</h1></div>
         <script src="utils.js"></script>
         <script src="dustbin.js"></script>
         <script src="containerManager.js"></script>
         <script src="stackContainer.js"></script>
         <script src="arrayContainer.js"></script>
-        <script src="main.js"></script>
+        <script src="main2.js"></script>
     </body>
 </html>
