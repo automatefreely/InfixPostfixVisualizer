@@ -1,51 +1,84 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     overflow: hidden;
 }
 
-#box{
+#box {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-#form{
- width: 230px;
+#canvas{
+    /* zoom: 0.5; */
 }
-.in{
+
+#form {
+    width: 350px;
+    margin-right: 150px;
+    border-width:2px;
+    border-style:solid;
+    border-color:black;
+    padding: 10px;
+    border-radius: 7px;
+    
+}
+
+.in {
     /* align:right; */
     display: flex;
     justify-content: space-between;
 }
-.in label{
-    text-size:20px;
+
+.in label {
+    font-size: 25px;
 }
-.bin{
+
+.in input{
+    font-size: 20px;
+}
+
+.bin {
     /* align:right; */
     display: flex;
     justify-content: space-around;
 }
 
-.bin button{
+.bin button {
     margin: 3px;
     padding: 3px;
+    background-color: burlywood;
+    border-radius: 5px;
+    color: white;
+    font-size: large;
 }
 
-#form{
+#form {
     align-items: center;
 }
 
 
 
 
-#h1{
+#h1 {
+    position: absolute;
+    bottom: 0;
     display: flex;
+    /* justify-content: center; */
+    width: 100vw;
+    margin-bottom: 50px;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-  }
-  
+}
+
 #h1 h1 {
     font-size: 50px;
-  }
+}
+
+#love{
+    color: red;
+}
