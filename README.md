@@ -11,4 +11,6 @@ What has been done?
 1. Auto Visualizer is in main.js and is solving the expression only from the first state (in which no user intraction has occured).
 2. Manual User Intraction is in main2.js and is working nearly perfectly.
 
-The task left is to join the two prefectly such that they intract flawlessly easily.
+The task left is to join the two prefectly such that they intract flawlessly easily[Done].
+
+Tell some new ideas to implement or you can point out the inefficiency in code.
