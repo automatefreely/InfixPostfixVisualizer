@@ -41,6 +41,10 @@ body {
 
 .in input{
     font-size: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    
+
 }
 
 .bin {
@@ -51,12 +55,20 @@ body {
 
 .bin button {
     margin: 3px;
-    padding: 3px;
+    padding: 3px 5px;
     background-color: burlywood;
     border-radius: 5px;
     color: white;
     font-size: large;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
+
+.bin button:hover {
+    background-color: brown;
+}
+
 
 .form {
     align-items: center;
@@ -82,4 +94,56 @@ body {
 
 #love{
     color: red;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+
+    display: inline;
+    margin-right: 15px;
+    /* Adjust the spacing between icons */
+}
+
+
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-twitter {
+    color: #1DA1F2;
+}
+
+.fa-instagram {
+    color: #C13584;
+}
+
+.fa-github{
+    color: #333;
+}
+.fa-linkedin{
+    color: #0e76a8;
+}
+footer{
+    padding-top: 8px;
+}
+
+.info{
+    background-color: #f2f2f2;
+    /* Leave some space between color and border */
+   
+}
+.line{
+    border-bottom: 1px solid black;
+    width :1px;
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 1;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
 }

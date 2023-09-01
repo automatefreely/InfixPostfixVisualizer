@@ -1,58 +1,104 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Postfix Infix Visulizer</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>Postfix Infix Visulizer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <!-- <div id = "h1">
+    <body>
+        <!-- <div id = "h1">
         <center><h1 >Infix Postfix Visualizer</h1></center>
         </div> -->
-    <div id="box">
-        <div id="canvas">
-            <canvas id="myCanvas"></canvas>
-        </div>
-        <div>
-        <div class="form">
-            <h2>Instruction</h2>
-            <p>You can write your infix expression in the box provided. Then you can click on "Auto Play" to see how
-                exactly your infix expression is converted to postfix. Or you also can intract with the element of the box. Do
-                explore!</p>
-        </div>
-        <div class="form">
-            <form>
-                <div class="in">
-                    <label for="infix">Infix:</label>
-                    <input type="text" id="infix" name="infix">
+        <div id="box">
+            <div id="canvas">
+                <canvas id="myCanvas"></canvas>
+            </div>
+            <div>
+                <div class="form info">
+                    <h2>Instruction</h2>
+                    <p>
+                        You can write your infix expression in the box provided.
+                        Then you can click on "Auto Play" to see how exactly
+                        your infix expression is converted to postfix. Or you
+                        also can intract with the element of the box. Do
+                        explore!
+                    </p>
                 </div>
-                <br>
-                <div class="in">
-                    <label for="postfix">Postfix:</label>
-                    <input type="text" id="postfix" name="postfix">
-                </div><br>
-            </form>
-            <div class="bin"><button id="update">Update</button> <button id="autoplay">Autoplay</button></div>
-
+                <div class="form">
+                    <form>
+                        <div class="in">
+                            <label for="infix">Infix:</label>
+                            <input type="text" id="infix" name="infix" />
+                        </div>
+                        <br />
+                        <div class="in">
+                            <label for="postfix">Postfix:</label>
+                            <input type="text" id="postfix" name="postfix" />
+                        </div>
+                        <br />
+                    </form>
+                    <div class="bin">
+                        <button id="update">Update</button>
+                        <button id="autoplay">Autoplay</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        
+
+        <div id="h1">
+            <h1>Infix to Postfix Visulizer</h1>
+            <p>
+                Made with <span id="love">❤</span> by Swaroop Dora (<a
+                    href="https://github.com/automatefreely"
+                    >AF</a
+                >)
+            </p>
+            <!-- add social links -->
+            <footer>
+                <ul class="social-icons">
+                    <!-- <li><a href="https://www.facebook.com/automatefreely"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/automatefreely"><i class="fab fa-twitter"></i></a></li> -->
+                    <li>
+                        <a title="Connect with me on linkedin"
+                            href="https://www.linkedin.com/in/swaroopdora"
+                            nofollow
+                            target="_blank"
+                            ><i class="fab fa-linkedin"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                            title="Visit my github"
+                            href="https://github.com/automatefreely"
+                            nofollow 
+                            target="_blank"
+                            ><i class="fab fa-github"></i
+                        ></a>
+                    </li>
+
+                    <li>
+                        <a
+                            title="follow me on instagram"
+                            href="https://www.instagram.com/swaroop_dora"
+                            nofollow
+                            target="_blank"
+                            ><i class="fab fa-instagram"></i
+                        ></a>
+                    </li>
+                </ul>
+            </footer>
+            <div class="line"></div>
         </div>
-    </div>
-
-    <div id="h1">
-        <h1>Infix to Postfix Visulizer</h1>
-        <p>Made with <span id="love">❤</span> by Swaroop Dora (<a href="https://github.com/automatefreely">AF</a>)</p>
-        <!-- add social links -->
-        <p></p>
-    </div>
-    <script src="utils.js"></script>
-    <script src="dustbin.js"></script>
-    <script src="containerManager.js"></script>
-    <script src="stackContainer.js"></script>
-    <script src="arrayContainer.js"></script>
-    <script src="main2.js"></script>
-</body>
-
+        <script src="utils.js"></script>
+        <script src="dustbin.js"></script>
+        <script src="containerManager.js"></script>
+        <script src="stackContainer.js"></script>
+        <script src="arrayContainer.js"></script>
+        <script src="main2.js"></script>
+    </body>
 </html>
