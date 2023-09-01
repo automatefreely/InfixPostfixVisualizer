@@ -1,6 +1,6 @@
 const myCanvas = document.getElementById("myCanvas");
 myCanvas.height = 550;
-myCanvas.width = 700;
+myCanvas.width = 900;
 const ctx = myCanvas.getContext("2d");
 let expression = "(m-n)*(p+q)";
 
